@@ -1,0 +1,43 @@
+.container {
+    background-color:yellow;
+   height: 700px;
+   width: 500px;
+    border: 1px solid black;
+     display: grid ;
+     grid-gap: 10px;
+  grid-template-columns:100px 100px 100px;
+  grid-template-rows: 100px 100px;
+  /* 1.Justify Content (Arrangment arround Main-Axis)
+  justify-content: end;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+*/
+/*align-content:center;
+align-content: space-around;
+align-content: space-between;
+*/
+
+}
+.box {
+    background-color: aqua;
+    border: 1px solid green;
+    
+  
+} 
+/*  
+#box1 {
+       align-self: start ;      
+       align-self: end;
+       align-self: auto;
+
+}
+*/
+/*
+#box1 {
+    justify-self: center;
+    justify-self: end;
+    justify-self: baseline;
+    justify-self: first baseline;
+}
+*/

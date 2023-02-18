@@ -1,0 +1,26 @@
+.container {
+    background-color:yellow;
+    height: 500px;
+    width: 500px;
+    display: grid;
+    border: 1px solid black;
+    grid-template-rows:25px 130px 170px;
+}.box {
+    background-color: aqua;
+    border: 1px solid green;
+    grid-template-areas:
+    "header" "sidebar" "main" "footer" ;
+    text-align: center;
+}
+ #header {
+    grid-area: header;
+}
+#SideBar {
+    grid-area: sidebar;
+}
+#Content {
+    grid-area: main;
+}
+#Footer {
+    grid-area: footer;
+}

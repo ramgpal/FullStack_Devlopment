@@ -1,0 +1,24 @@
+/* Static Position 
+    position: static;
+}  */
+div {
+    display: inline-block;
+    border: 1px solid black;
+    width: 100px;
+    height:100px;
+    background-color: aqua;
+}
+/* Relative Position */
+#box3 {
+    position: relative;
+   top: 50px;
+} 
+#box1 {
+    position: fixed;
+} 
+
+.wrapper {
+    background-color: yellow;
+    width: 100vw;
+    height: 2000px;
+}

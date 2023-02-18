@@ -1,0 +1,45 @@
+.container {
+    background-color: white;
+    height: 215px;
+    width: 100;
+    border: 2px solid red;
+}
+.box {
+    background-color:aqua;
+    border: 2px solid green;
+    height: 212px;
+    width: 212px;
+    animation-name: Tiranga;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-direction: normal;
+    /* animation-fill-mode: ; 
+    animation-fill-mode: forwards;
+    animation-fill-mode: backwards;
+    */
+}
+/* keyframes */
+/* @keyframes Tiranga{
+    from {
+        width: 212px;
+    }
+    to {
+   width:800px;
+    }
+} */
+@keyframes Tiranga {
+    0%{
+        width: 212px;
+        background-color:orange;
+    }
+    45% {
+        width: 70%;
+        background-color: white;
+    }
+    100% {
+        width: 100%;
+        background-attachment: green;
+    }
+}

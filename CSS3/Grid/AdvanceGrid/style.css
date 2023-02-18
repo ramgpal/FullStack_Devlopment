@@ -1,0 +1,16 @@
+.container {
+    background-color:yellow;
+     border: 1px solid black;
+     display: grid ;
+     grid-gap: 10px;
+     grid-auto-rows: minmax(100px, auto);
+     grid-template-columns: repeat(4,1fr);
+}
+.box {
+    background-color: aqua;
+    border: 2px solid green;
+   
+   /* height: 50px;
+   width: 50px; */
+}
+

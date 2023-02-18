@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --cream: hsl(30, 38%, 92%);
+    --dark-cyan: hsl(158, 36%, 37%);
+    --very-dark-blue: hwb(212 11% 83%);
+    --dark-greyish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-green: rgba(26,64,49,255);
+}
+body {
+    background-color: var(--cream);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.image {
+    flex-basis: 300px;
+    height: 400px;
+    border-radius: 0.6rem 0 0 0.6rem;
+    background-image: url(images/mug.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.info {
+    flex-basis: 370px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 0.6rem 0.6rem 0;
+    background-color: var(--white);
+    padding: 2rem;
+}
+@media only screen and (max-width: 715px) {
+    .wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        height: 650px;
+        width: 500px;
+        min-width: 300px;
+    }
+    .image {
+        background-image: url(images/mug-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        flex-basis: 240px;
+        border-radius: 0.6rem 0.6rem 0 0;
+    }
+    .info {
+        flex-basis: 360px;
+        border-radius: 0 0 0.6rem 0.6rem;
+        padding: 1rem;
+    }
+    footer.attribution {
+        font-size: 0.5rem;
+    }
+}
+h2, p, .old, .cart {
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--dark-greyish-blue);
+}
+h1, h3 {
+    font-family: Fraunces;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+h2 {
+    letter-spacing: 5px;
+}
+.price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    column-gap: 1rem;
+}
+h3 {
+    color: var(--dark-cyan);
+    font-weight: 700;
+}
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    height: 3rem;
+    color: var(--white);
+    background-color: var(--dark-cyan);
+    border-radius: 0.4rem;
+}
+.cart:hover {
+    background-color: var(--very-dark-green);
+}
+footer {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform:translateX(-50%);
+}

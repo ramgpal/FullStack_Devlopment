@@ -1,0 +1,11 @@
+.TextShadow {
+    text-shadow: 3px 3px yellow;
+
+}
+.BoxShadow {
+    color: red;
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+box-shadow: 3px 3px black;
+}
